@@ -106,7 +106,7 @@ var (
 	// ErrPullSubscribeToPushConsumer is returned when attempting to use PullSubscribe on push consumer.
 	ErrPullSubscribeToPushConsumer JetStreamError = &jsError{message: "cannot pull subscribe to push based consumer"}
 
-	// ErrPullSubscribeRequired is returned when attempting to use subscribe methods not suitable for pull consumers for pull consumers.
+	// ErrPullSubscribeRequired is returned when attempting to use subscribe methods not suitable for pull consumers.
 	ErrPullSubscribeRequired JetStreamError = &jsError{message: "must use pull subscribe to bind to pull based consumer"}
 
 	// ErrMsgAlreadyAckd is returned when attempting to acknowledge message more than once.
